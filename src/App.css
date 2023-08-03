@@ -1,0 +1,233 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* ----------------------------------------------------------------- */
+
+.nav-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2px;
+  height: 8vh;
+  align-items: center;
+  /* border: 1px solid black; */
+}
+
+.nav-menu-main{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50vw;
+  /* border: 1px solid black; */
+}
+
+.nav-menu-main a{
+  text-decoration: none;
+  color: black;
+}
+
+.contact-nav-btn{
+  background-color: rgb(91,219,147);
+  color: white;
+  width: 8vw;
+  height: 5vh;
+  border: none;
+  box-shadow: 0px 5px 6px rgba(184, 183, 183, 0.363);
+  border-radius: 5px;
+}
+
+/* -------------------------------------------------------------------------------- */
+
+.header-main{
+  background-image: linear-gradient(rgba(0, 128, 0, 0.644), white);
+  width: 100%;
+  height: 50vh;
+}
+
+
+/* ------------------------------------------------------------------------ */
+
+.signup-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  box-shadow: 0px 4px 5px rgba(128, 128, 128, 0.616);
+  margin: 3px;
+  padding: 10px;
+  color: black;
+  background-color: rgba(215, 250, 228, 0.534);
+  font-family:Arial, Helvetica, sans-serif;
+  position: relative;
+  height: 80vh;
+
+}
+
+.signup-main .input{
+  margin: 5px;
+  padding: 5px;
+  width: 50%;
+  color: green;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.349);
+}
+
+.radio-gender{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  margin: 8px;
+  /* border: 1px solid black; */
+  width: 70%;
+  
+}
+
+.signup-head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.checkbox{
+  display: flex;
+  justify-content: left;
+ /* border: 1px solid black; */
+ width: 20%;
+ text-align: left;
+ margin: 5%;
+
+}
+
+h2{
+  color: green;
+}
+
+label{
+  width: 20%;
+  color: black;
+  font-size: 15px;
+  /* border: 1px solid black; */
+  
+}
+.input-div{
+  display: flex;
+  flex-direction: row;
+ width: 100%;
+ font-weight: 500;
+ justify-content: center;
+ /* border: 1px solid black; */
+ text-align: left;
+}
+
+.inner-radio{
+  display: flex;
+  
+
+}
+#skills{
+  width: 52%;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.432);
+  padding: 5px;
+}
+
+
+.submit-btn{
+  width: 20%;
+  /* position: absolute;
+  bottom: 0;
+  right: 15%; */
+  padding: 8px;
+  margin-top: 5%;
+  border: none;
+  box-shadow: 0px 3px 5px green;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.register{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 7px;
+}
+.data-div{
+  display: flex;
+  flex-direction: column;
+ box-shadow: 0px 0px 3px rgba(15, 128, 0, 0.473);
+  position: relative;
+  border-radius: 12px 5px;
+  width: 40%;
+  height: 30vh;
+  padding: 10px;
+  align-items: flex-start;
+
+}
+
+.data-div span{
+  margin: 5px;
+  font-size: 14px;
+  color: green;
+  font-style: italic;
+}
+
+
+/* ----------------------------------------CRUD-------------------------------------------------- */
+
+.table-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+table td,th{
+  padding: 5px;
+  
+}
+
+.table-main button{
+  cursor: pointer;
+}
