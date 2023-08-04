@@ -215,19 +215,89 @@ label{
 
 
 /* ----------------------------------------CRUD-------------------------------------------------- */
-
+.data-txt{
+  color: rgb(5, 85, 5);
+  
+}
 .table-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+.table-main table{
+  margin-top: 10px;
+  width: 100%;
+}
+table td,th{
+  padding: 10px;
+  color: rgb(3, 71, 3); 
+}
+
+.table-main button{
+  cursor: pointer;
+  border: none;
+  border-radius: 2px ;
+  padding: 5px 10px;
+  color: white;
+  box-shadow: 0px 3px 5px rgba(128, 128, 128, 0.678);
+}
+
+.form-main-div{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 90vh;
 }
-
-table td,th{
+.update-form-main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border:1px solid black; */
+  box-shadow: 2px 4px 4px rgb(14, 160, 153);
+  border-radius: 5px ;
+  width: 40%;
+  background-color: aliceblue;
+  height: 50vh;
+  color: rgb(3, 83, 3);
+  position: relative;
   padding: 5px;
-  
 }
 
-.table-main button{
-  cursor: pointer;
+.update-form-main input{
+  padding: 8px;
+  margin: 5px;
+  width: 60%;
+  border: none;
+  color: green;
+  border-radius: 2px ;
+  box-shadow: 1px 1px 2px grey;
 }
+
+
+.update-form-main button{
+
+  width: 30%;
+ 
+  padding: 8px;
+  
+  margin-top: 15px;
+  border: none;
+  box-shadow: 0px 3px 5px grey;
+  border-radius: 2px;
+  cursor: pointer;
+  color: white;
+  background-image: linear-gradient(rgba(13, 54, 2, 0.658), rgba(5, 90, 54, 0.568));
+}
+
+.delete-btn{
+  background-image: linear-gradient(rgba(255, 0, 0, 0.568), rgba(145, 22, 22, 0.541));
+}
+.edit-btn{
+  background-image: linear-gradient(rgba(0, 38, 255, 0.568), rgba(22, 34, 145, 0.568));
+}
+.add-btn{
+  background-image: linear-gradient(rgba(13, 54, 2, 0.658), rgba(5, 90, 54, 0.568));
+}
+
