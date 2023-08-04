@@ -1,5 +1,4 @@
 import React from 'react';
-import Signup from './components/Signup.jsx';
 import './App.css';
 import Crud from './components/Crud.jsx';
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
