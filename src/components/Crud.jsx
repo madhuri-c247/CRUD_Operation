@@ -38,8 +38,6 @@ const Crud = () => {
     const editData = (ide) => {
         const toEdit = datas[ide]
         setid(ide)
-        console.log(toEdit)
-        console.log('edit', ide)
         setnewdata({
             ...toEdit
         })
@@ -47,14 +45,17 @@ const Crud = () => {
     }
 
     const updatedata = () => {
-        datas.push(newdata)
+        // datas.push(newdata)
+        console.log(newdata)
         setupdate(false)
         settoggle(false)
-        //  axios.put(url+`${newdata.id}`, newdata).then(res=>{
-        //     setdata(res)
-        //  }).catch(err=>{
-        //     console.log('err', err)
-        //  })
+         axios.post(url, newdata.toAdd).then(res=>{ 
+            console.log(res.data)
+            datas.push(res.data)
+
+         }).catch(err=>{
+            console.log('err', err)
+         })
     }
 
     const editdata = () => {
